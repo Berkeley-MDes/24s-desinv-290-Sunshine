@@ -1,0 +1,51 @@
+/* src/components/LeftDisplay.css */
+
+
+.concept-container {
+    position: absolute; /* Ensure this container does not push the sticky container down */
+    top: 0; /* Positioning at the top */
+    left: 0; /* Positioning at the left */
+    display: flex; /* Use flexbox to manage the stacking order */
+    justify-content: flex-end; /* Align cards from right to left */
+    flex-wrap: wrap; /* Allow cards to wrap onto new lines if needed */
+    z-index: 2; /* Ensure it appears above the sticky container */
+  }
+
+  .conceptcard {
+    background-color: lightblue; /* Background color for visual clarity */
+    border: 1px solid black; /* Outline for clarity */
+    margin: 5px; /* Spacing between cards */
+    padding: 10px; /* Padding inside cards */
+    max-width: 150px; /* Limit card width */
+  }
+
+
+
+.sticky-container {
+    position: relative;
+}
+
+.sticky-box {
+    position: absolute;
+    /* To ensure box and label are independent */
+    border: 1px solid black;
+    /* Outline for visual clarity */
+}
+
+.sticky-box.theme {
+    background-color: lightgreen;
+    /* Theme-specific styling */
+}
+
+.sticky-box.nottheme {
+    background-color: lightyellow;
+    /* Non-theme-specific styling */
+}
+
+.sticky-label {
+    text-align: center;
+    /* Center the label text */
+    font-size: 12px;
+    /* Adjust font size as needed */
+
+}

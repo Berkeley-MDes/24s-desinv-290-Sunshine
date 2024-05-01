@@ -1,0 +1,33 @@
+.main-wrapper {
+  display: flex;
+  place-items: center;
+
+  max-width: var(--projector-width);
+  min-width: var(--projector-width);
+  width: var(--projector-width);
+
+  max-height: var(--projector-height);
+  min-height: var(--projector-height);
+  height: var(--projector-height);
+
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+}
+
+
+.left-wrapper,
+.right-wrapper {
+  height: 100%;
+}
+
+.left-wrapper {
+  width: var(--left-wrapper-width);
+  background-color: lightgray; /* Optional styling for visual distinction */
+}
+
+.right-wrapper {
+  width: var(--right-wrapper-width);
+  background-color: #111; /* Optional styling for visual distinction */
+}
